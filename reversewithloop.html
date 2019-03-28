@@ -1,0 +1,21 @@
+<!doctype html>
+	<html>
+		<body>
+			<label>enter the number to be reversed</label>
+			<input id="int"><br>
+			<button onclick="reverse();">reverse</button>
+			<input id ="rest">
+				<script>
+					function reverse()
+					{
+						num=document.getElementById("int").value;
+						var space ="";
+						for(var i=num.length-1;i>=0;i--)
+						{
+							space +=num[i];
+							document.getElementById("rest").value=space
+						}
+					}
+				</script>
+		</body>
+	</html>
