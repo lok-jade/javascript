@@ -1,0 +1,22 @@
+<html>
+ <head>
+ <title>reverse array</title>
+ </head>
+ <body>
+ <label>enter the number to be reversed</label>
+  <input id="val"><br>
+  <button onclick="reverse();">
+  reverse
+  </button><br>
+  <input id="res">
+<script>
+function reverse()
+{
+val=document.getElementById("val").value;
+rev = val.split("").reverse().join("");
+document.getElementById("res").value = rev;
+
+}
+</script>
+ </body>
+</html>
