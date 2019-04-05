@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <h1>CRUD operation in array</h1>
+
+   <script>
+        var array = [];
+        function arrayPush() {
+            arr= document.getElementsById("input").value;
+            array.push(arr);
+            alert(arr);
+            console.log(arr);
+        }
+        function pop() {
+          array.pop();
+          }
+        function update() {
+          i = document.getElementById('n')
+          val1 = document.getElementById('val')
+          i--;
+          array[i] = val1;
+        }
+        function display() {
+          for (var i = 0; i < array.length; i++) {
+            document.getElementById("dis").innerHTML=array[i];
+          }
+        }
+
+   </script>
+   </head>
+   <body>
+     <br>
+     <label>add element into array</label><br><br>
+     <input  id="input"><br><br>
+     <button type="button" onclick="arrayPush();">push</button><br><br>
+     <label>delete element from array</label><br><br>
+     <button onclick="pop();">pop</button><br><br>
+     <label>update the array</label><br><br>
+     <input type="number" id="n"><br><br>
+     <input type="text" id="val"><br><br>
+     <button onclick="update();">update</button><br><br>
+     <label>display the array</label><br><br>
+     <input type="text" id="dis"><br><br>
+     <button onclick="display();">display</button>
+   </body>
